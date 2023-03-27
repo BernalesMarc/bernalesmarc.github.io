@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>M.A.</title>
+    <link rel="icon" href="img/meLogo.svg">
+    <script src="https://kit.fontawesome.com/d4e2a811bb.js" crossorigin="anonymous"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            var header = document.querySelector('#header');
+            if (window.scrollY > header.offsetHeight) {
+                document.querySelector('nav').style.backgroundColor = 'rgba(38, 38, 38, 0.8)';
+            } else {
+                document.querySelector('nav').style.backgroundColor = 'transparent';
+            }
+        });
+
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+    <div id="header">
+        <nav>
+            <img src="img/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#certificate">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="container">
+            <div class="header-text">
+                <p>UX/UI Designer | Front End Web Developer</p>
+                <h1>Hi, I'm <span>Marc</span> <br> Adrian from Philippines</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------About-------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/gradpic.png" alt="my-pic">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p>I'm a college student with a passion for web design, frontend development, and UX/UI designing. While I may not have a lot of experience, I'm interested in applying to your company to contribute my knowledge skills. I'm eager to learn and work hard to help your company succeed</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UX/UI Design</span><br>Web Design</li>
+                            <li><span>System Developemnt</span><br>Desktop Applications Development</li>
+                            <li><span>Digital Design Skills</span><br>Desktop Applications Development</li>
+                            <li><span>Networking Setup</span><br>Basic Networking and Server Administrator</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <!-- Education -->
+                        <ul>
+                            <li><span>2018 - 2020</span><br>ICT from STI College Carmona</li>
+                            <li><span>2020 - Present</span><br>BSIT from STI College Carmona</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------Expertise-------->
+
+    <div id="expertise">
+        <div class="container">
+            <h1 class="sub-title">My Expertise</h1>
+
+            <div class="expertise-list">
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quas numquam illo suscipit labore eveniet, soluta, voluptas unde quos enim, beatae molestiae iusto explicabo.</p>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Desktop Applications Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quas numquam illo suscipit labore eveniet, soluta, voluptas unde quos enim, beatae molestiae iusto explicabo.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UX/UI Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quas numquam illo suscipit labore eveniet, soluta, voluptas unde quos enim, beatae molestiae iusto explicabo.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-camera-retro"></i>
+                    <h2>Photography</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate quas numquam illo suscipit labore eveniet, soluta, voluptas unde quos enim, beatae molestiae iusto explicabo.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--------certificate-------->
+
+    <div id="certificate">
+        <div class="container">
+            <h1 class="sub-title">My Certificate</h1>
+            <div class="certificate-list">
+                <div class="certificate">
+                    <img src="img/Certi/6a39d17a-3bcd-4dd9-80c6-0543300f841a.png">
+                    <div class="layer">
+                        <h1>Responsive Web Design</h1>
+                        <p>From SoloLearn 2021</p>
+                    </div>
+                </div>
+                <div class="certificate">
+                    <img src="img/Certi/Coursera%20D7MQ72JUG7YT.jpg">
+                    <div class="layer">
+                        <h1>HTML, CSS and Javascript for Web Developers</h1>
+                        <p>From Coursera 2020</p>
+                    </div>
+                </div>
+
+                <div class="certificate">
+                    <img src="img/Certi/4cd1275d-df49-4d95-883b-8c5dadbec689.png">
+                    <div class="layer">
+                        <h1>SQL</h1>
+                        <p>From SoloLearn 2021</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--------accordion-------->
+
+            <button class="accordion"></button>
+            <div class="panel">
+                <div class="panel-list">
+                    <div class="certificate">
+                        <img src="img/Certi/Coursera%20EPVU9XKREV6C.jpg">
+                        <div class="layer">
+                            <h1>Introduction to CSS3</h1>
+                            <p>From Coursera 2020</p>
+                        </div>
+                    </div>
+                    <div class="certificate">
+                        <img src="img/Certi/Coursera%20KWL78SRYAV2F.jpg">
+                        <div class="layer">
+                            <h1>Programming Foundations with Javascript, HTML and CSS</h1>
+                            <p>From Coursera 2020</p>
+                        </div>
+                    </div>
+                    <div class="certificate">
+                        <img src="img/Certi/Coursera%20YRQSMKLCW7FA.jpg">
+                        <div class="layer">
+                            <h1>Introduction to HTML5</h1>
+                            <p>From Coursera 2020</p>
+                        </div>
+                    </div>
+                    <div class="certificate">
+                        <img src="img/Certi/097f16d9-4b3a-4e52-a3aa-e20a4b64bdb9.png">
+                        <div class="layer">
+                            <h1>C#</h1>
+                            <p>From SoloLearn 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+
+        </script>
+
+    </div>
+
+    
+
+    <!--------contact-------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+
+                    <p><i class="fa-solid fa-envelope"></i>marcadriancbernales659@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>09613610908</p>
+
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                    <a href="#" class="btn btn2">Download CV</a>
+                    <!--CV soon insert file directory-->
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email">
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        var sidemeenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemeenu.style.right = "-100%";
+        }
+
+    </script>
+
+    <script>
+        ScrollReveal({
+            reset: false,
+            distance: '20px',
+            duration: 2500,
+            delay: 400
+        });
+        
+        ScrollReveal().reveal('.header-text, .sub-title, .about-col-2', {delay: 300,origin: 'left'});
+        ScrollReveal().reveal('.contact-left p', {delay: 300,origin: 'left', interval:200});
+        ScrollReveal().reveal('.social-icons i, nav img', {delay: 350,origin: 'top', interval:200});
+        ScrollReveal().reveal('.about-col-1 img', {delay: 400,origin: 'right'});
+        ScrollReveal().reveal('.about-col-2 p, .tab-titles', {delay: 400,origin: 'top'});
+        ScrollReveal().reveal('.expertise-list,.expertise-list div', {delay: 400,origin: 'bottom', interval:200});
+        ScrollReveal().reveal('.certificate-list, .certificate-list .certificate img', {delay: 500,origin: 'bottom', interval:200});
+        ScrollReveal().reveal('.btn,.accordion', {delay: 400,origin: 'top'});
+        ScrollReveal().reveal('.contact-right form input, textarea', {delay: 500,origin: 'left', interval:200});
+    </script>
+
+<script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+</body>
+
+</html>
