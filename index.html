@@ -205,7 +205,39 @@
 
     </div>
 
-    
+    <!--------Projects-------->
+
+     <div id="project">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-pen-ruler"></i>
+                    <h2>Logos</h2>
+                    <p>Creating Logo using Adobe Illustrator</p>
+                    <a href="#">See More</a>
+                </div>
+
+                <div>
+                    <i class="fa-regular fa-pen-to-square"></i>
+                    <h2>Picture Editing</h2>
+                    <p>Editing Picure Using Adobe Photoshop</p>
+                    <a href="#">See More</a>
+                </div>
+                
+                <div>
+                    <i class="fa-solid fa-sitemap"></i>
+                    <h2>Network and Server Administrator</h2>
+                    <p>Setup and maintain a network of Student Research Center</p>
+                    <a href="#">See More</a>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
 
     <!--------contact-------->
 
@@ -245,6 +277,7 @@
 
     <script>
         var sidemeenu = document.getElementById("sidemenu");
+        var menuIcon = document.getElementById("menuIcon");
 
         function openmenu() {
             sidemeenu.style.right = "0";
@@ -263,19 +296,52 @@
             duration: 2500,
             delay: 400
         });
-        
-        ScrollReveal().reveal('.header-text, .sub-title, .about-col-2', {delay: 300,origin: 'left'});
-        ScrollReveal().reveal('.contact-left p', {delay: 300,origin: 'left', interval:200});
-        ScrollReveal().reveal('.social-icons i, nav img', {delay: 350,origin: 'top', interval:200});
-        ScrollReveal().reveal('.about-col-1 img', {delay: 400,origin: 'right'});
-        ScrollReveal().reveal('.about-col-2 p, .tab-titles', {delay: 400,origin: 'top'});
-        ScrollReveal().reveal('.expertise-list,.expertise-list div', {delay: 400,origin: 'bottom', interval:200});
-        ScrollReveal().reveal('.certificate-list, .certificate-list .certificate img', {delay: 500,origin: 'bottom', interval:200});
-        ScrollReveal().reveal('.btn,.accordion', {delay: 400,origin: 'top'});
-        ScrollReveal().reveal('.contact-right form input, textarea', {delay: 500,origin: 'left', interval:200});
+
+        ScrollReveal().reveal('.header-text, .sub-title, .about-col-2', {
+            delay: 300,
+            origin: 'left'
+        });
+        ScrollReveal().reveal('.contact-left p', {
+            delay: 300,
+            origin: 'left',
+            interval: 200
+        });
+        ScrollReveal().reveal('.social-icons i, nav img', {
+            delay: 350,
+            origin: 'top',
+            interval: 200
+        });
+        ScrollReveal().reveal('.about-col-1 img', {
+            delay: 400,
+            origin: 'right'
+        });
+        ScrollReveal().reveal('.about-col-2 p, .tab-titles', {
+            delay: 400,
+            origin: 'top'
+        });
+        ScrollReveal().reveal('.expertise-list,.expertise-list div', {
+            delay: 400,
+            origin: 'bottom',
+            interval: 200
+        });
+        ScrollReveal().reveal('.certificate-list, .certificate-list .certificate img, .project-list div', {
+            delay: 500,
+            origin: 'bottom',
+            interval: 200
+        });
+        ScrollReveal().reveal('.btn,.accordion', {
+            delay: 400,
+            origin: 'top'
+        });
+        ScrollReveal().reveal('.contact-right form input, textarea', {
+            delay: 500,
+            origin: 'left',
+            interval: 200
+        });
+
     </script>
 
-<script>
+    <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
