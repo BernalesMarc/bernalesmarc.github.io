@@ -1,25 +1,23 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="eng">
 
 <head>
+  
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css link-->
     <link rel="stylesheet" href="index.css">
     <title>M.A.</title>
+    <!--icon-->
     <link rel="icon" href="img/meLogo.svg">
+    <!--font awesome link-->
     <script src="https://kit.fontawesome.com/d4e2a811bb.js" crossorigin="anonymous"></script>
-    <script>
-        window.addEventListener('scroll', function() {
-            var header = document.querySelector('#header');
-            if (window.scrollY > header.offsetHeight) {
-                document.querySelector('nav').style.backgroundColor = 'rgba(38, 38, 38, 0.8)';
-            } else {
-                document.querySelector('nav').style.backgroundColor = 'transparent';
-            }
-        });
-
-    </script>
+    <script src="scroll-navbar.js">
+        </script>
+    <!--scroll reveal js link-->
     <script src="https://unpkg.com/scrollreveal"></script>
+
+   
 </head>
 
 <body>
@@ -186,22 +184,7 @@
             </div>
         </div>
 
-        <script>
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                    } else {
-                        panel.style.maxHeight = panel.scrollHeight + "px";
-                    }
-                });
-            }
-
+        <script src="accordion.js">
         </script>
 
     </div>
@@ -216,21 +199,21 @@
                 <div>
                     <i class="fa-solid fa-pen-ruler"></i>
                     <h2>Logos</h2>
-                    <p>Creating Logo using Adobe Illustrator</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero provident, esse ex?</p>
                     <a href="#">See More</a>
                 </div>
 
                 <div>
-                    <i class="fa-regular fa-pen-to-square"></i>
+                    <img src="img/apperture.svg" alt="">
                     <h2>Picture Editing</h2>
-                    <p>Editing Picure Using Adobe Photoshop</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dolor esse qui.</p>
                     <a href="#">See More</a>
                 </div>
                 
                 <div>
                     <i class="fa-solid fa-sitemap"></i>
                     <h2>Network and Server Administrator</h2>
-                    <p>Setup and maintain a network of Student Research Center</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, sunt.</p>
                     <a href="#">See More</a>
                 </div>
                 
@@ -257,7 +240,7 @@
                         <a href="#"><i class="fa-brands fa-discord"></i></a>
                         <a href="#"><i class="fa-brands fa-tiktok"></i></a>
                     </div>
-                    <a href="#" class="btn btn2">Download CV</a>
+                    <a href="Bernales-cv.pdf" class="btn btn2" download>Download CV</a>
                     <!--CV soon insert file directory-->
                 </div>
 
@@ -276,88 +259,13 @@
     </div>
 
 
-    <script>
-        var sidemeenu = document.getElementById("sidemenu");
-        var menuIcon = document.getElementById("menuIcon");
-
-        function openmenu() {
-            sidemeenu.style.right = "0";
-        }
-
-        function closemenu() {
-            sidemeenu.style.right = "-100%";
-        }
-
+    <script src="sidemenu.js">
     </script>
 
-    <script>
-        ScrollReveal({
-            reset: false,
-            distance: '20px',
-            duration: 2500,
-            delay: 400
-        });
-
-        ScrollReveal().reveal('.header-text, .sub-title, .about-col-2', {
-            delay: 300,
-            origin: 'left'
-        });
-        ScrollReveal().reveal('.contact-left p', {
-            delay: 300,
-            origin: 'left',
-            interval: 200
-        });
-        ScrollReveal().reveal('.social-icons i, nav img', {
-            delay: 350,
-            origin: 'top',
-            interval: 200
-        });
-        ScrollReveal().reveal('.about-col-1 img', {
-            delay: 400,
-            origin: 'right'
-        });
-        ScrollReveal().reveal('.about-col-2 p, .tab-titles', {
-            delay: 400,
-            origin: 'top'
-        });
-        ScrollReveal().reveal('.expertise-list,.expertise-list div', {
-            delay: 400,
-            origin: 'bottom',
-            interval: 200
-        });
-        ScrollReveal().reveal('.certificate-list, .certificate-list .certificate img, .project-list div', {
-            delay: 500,
-            origin: 'bottom',
-            interval: 200
-        });
-        ScrollReveal().reveal('.btn,.accordion', {
-            delay: 400,
-            origin: 'top'
-        });
-        ScrollReveal().reveal('.contact-right form input, textarea', {
-            delay: 500,
-            origin: 'left',
-            interval: 200
-        });
-
+    <script src="scroll-reveal.js">
     </script>
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-
-        function opentab(tabname) {
-            for (tablink of tablinks) {
-                tablink.classList.remove("active-link");
-            }
-
-            for (tabcontent of tabcontents) {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-
+    <script src="tab-link.js">
     </script>
 
 </body>
