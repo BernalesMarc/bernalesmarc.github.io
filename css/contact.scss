@@ -1,0 +1,80 @@
+#contact{
+.container{padding: 80px 10%;
+    .sub-title{
+        margin: 10px 0 10px 0;
+    }
+
+    .row{
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .btn{
+            display: block;
+            margin: 50px auto;
+            width: fit-content;
+            border: 1px solid #712C91;
+            background: #080808;
+            padding: 14px 50px;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 8px;
+            transition: background 0.5s;
+            
+                &:hover {
+                    background: #712C91;
+                }        
+
+        } 
+
+        .contact-left{
+            flex-basis: 35%;
+
+            p i {
+                color: #712C91;
+                margin: 15px;
+                font-size: 25px;
+            }
+
+            .social-icons {
+                margin-top: 30px;
+            }
+            
+            .social-icons a {
+                text-decoration: none;
+                font-size: 30px;
+                margin-right: 15px;
+                color: #ababab;
+                display: inline-block;
+                transition: transform 0.5s;
+            }
+            
+            .social-icons a:hover {
+                color: #712C91;
+                transform: translatey(-5px);
+            }
+
+        }
+
+        .contact-right {
+                flex-basis: 60%;
+                width: 100%;
+
+                form {
+                    width: 100%;
+                    input, textarea {
+                      width: 100%;
+                      border: 0;
+                      outline: none;
+                      background: #262626;
+                      padding: 15px;
+                      margin: 15px 0;
+                      color: #fff;
+                      font-size: 18px;
+                      border-radius: 6px;
+                    }
+                  }
+    }
+}
+}}

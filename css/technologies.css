@@ -1,0 +1,51 @@
+#technologies .container {
+  padding: 80px 10%;
+}
+#technologies .container .technologies-container {
+  padding: 80px 0;
+  margin: 2% 0 2% 0;
+}
+#technologies .container .technologies-container .sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0 0 3% 0;
+  color: #712C91;
+}
+#technologies .container .technologies-container h1 {
+  font-size: 60px;
+  margin: 20px 0 0px 0;
+}
+#technologies .container .technologies-container .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#technologies .container .technologies-container .row .col {
+  background-color: #262626;
+  border-radius: 20px;
+  margin: 10px;
+  height: 200px;
+  width: 45%;
+  padding: 20px 0 0 0;
+  overflow: hidden;
+}
+#technologies .container .technologies-container .row .col h1 {
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+}
+#technologies .container .technologies-container .row .col .col-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#technologies .container .technologies-container .row .col .col-content img {
+  height: 75px;
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  transition: 0.5s ease;
+}
+#technologies .container .technologies-container .row .col .col-content img:hover {
+  transition: 1s ease;
+}/*# sourceMappingURL=technologies.css.map */

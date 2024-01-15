@@ -1,0 +1,36 @@
+$align-items:center;
+$default-transition:0.5s ease;
+
+
+
+$background-color:#080808;
+$primary-color:#fff;
+$secondary-color:#712C91;
+$align-items:center;
+$default-transition:0.5s ease;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import 'header';
+@import 'about';
+@import 'certificate';
+@import 'accordion';
+@import 'technologies';
+@import 'contact';
+@import 'Projects';
+
+@import 'media-queries';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: $primary-color;
+}
+

@@ -1,0 +1,71 @@
+#technologies{
+    .container{
+
+        padding: 80px 10%;
+
+    .technologies-container{
+
+        padding: 80px 0;
+
+        margin: 2% 0 2% 0;
+
+        .sub-title {
+            font-size: 60px;
+            font-weight: 600;
+            margin:0 0 3% 0;
+            color:  #712C91;
+          }
+        
+        h1{
+            font-size: 60px;
+            margin: 20px 0 0px 0;
+        }
+
+        .row{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            //width: 100%;
+
+            .col{
+                
+                background-color: #262626;
+                border-radius: 20px;
+                //flex-basis: 45%;
+                margin: 10px;
+                height: 200px;
+                width: 45%;
+                padding: 20px 0 0 0;
+                overflow:hidden;
+
+                h1{
+                    font-size: 30px;
+                    text-align: center;
+                    width: 100%;
+                }
+
+                .col-content{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px;
+                    
+                    img{
+                        height: 75px;
+                        padding: 10px;
+                        margin: 0 10px 0 10px;
+                        transition: 0.5s ease;
+
+                        &:hover{
+                            transition:  1s ease;
+                        }
+                        
+                    }
+                }
+                
+            }
+        }
+
+    }
+}
+}
