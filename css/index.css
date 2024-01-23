@@ -412,13 +412,38 @@ nav ul li a:hover::after {
   padding: 25px;
   border-radius: 12px;
 }
+.tabcontent .tabcontent_container_parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+.tabcontent .tabcontent_container_parent .tabcontent_container {
+  border: 1px solid red;
+  width: 230px;
+  height: 150px;
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tabcontent .tabcontent_container_parent .tabcontent_container_img {
+  border: 1px solid white;
+}
+.tabcontent .tabcontent_container_parent .tabcontent_container_btn {
+  border: 1px solid blue;
+  bottom: 0px;
+}
 .tabcontent .tabcontent-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .tabcontent .tabcontent-list img {
-  height: 140px;
+  height: 350px;
   padding: 20px;
   margin: 10px;
 }
