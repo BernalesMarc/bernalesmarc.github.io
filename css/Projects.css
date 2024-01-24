@@ -10,6 +10,7 @@
   margin: 2% 0 0 0;
   padding: 25px;
   border-radius: 12px;
+  overflow: hidden;
 }
 .tabcontent .tabcontent_container_parent {
   display: flex;
@@ -41,10 +42,20 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.tabcontent .tabcontent-list img {
-  height: 350px;
-  padding: 20px;
+.tabcontent .tabcontent-list div {
+  border-radius: 15px;
+  background-color: #1a1919;
+  width: 320px;
+  height: 370px;
+  overflow: hidden;
   margin: 10px;
+}
+.tabcontent .tabcontent-list div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 20px;
 }
 
 .topright {
