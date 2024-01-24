@@ -21,32 +21,56 @@ $default-color: #712C91;
   border-radius: 12px;
   overflow: hidden;
 
+  h3{
+    img{
+      width: 20%;
+    }
+  }
+
   .tabcontent_container_parent{
 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-            overflow: hidden;
+  overflow: hidden;
 
   .tabcontent_container{
-    border:1px solid red;
-    width: 230px;
-    height: 150px;
-    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #1a1919;
+    width: 320px;
+    height: 370px; 
     text-align: center;
     padding: 10px;
     margin: 20px;
     display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .tabcontent_container_img{
-    border: 1px solid white;
+    img{
+     padding:20px;
+    overflow: hidden;
+    width: 100%; 
+      height: 100%; 
+      object-fit: contain; 
+    }
   }
   .tabcontent_container_btn{
-    border:1px solid blue;
-    bottom: 0px;
+    button {
+      margin: 6% 0 0 0;
+      background-color:#00000000;
+      float: left;
+      border: none;
+      color: $default-color;
+      outline: none;
+      cursor: pointer;
+      padding: 10px;
+      transition: 0.2s ease;
+      font-size: 17px;
+      &:hover {
+        color: white;
+        }
+    }
   }
   }
 
@@ -153,9 +177,6 @@ div{
         padding: 10px;
         transition: 0.2s ease;
         font-size: 17px;
-    
-            
-    
       }
 
     }
