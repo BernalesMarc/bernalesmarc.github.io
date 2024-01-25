@@ -18,12 +18,12 @@ nav .fa-solid {
     background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash%20-%20Copy.jpg);
 
     .header-text {
-        margin-top: 100%;
-        font-size: 16px;
+        margin-top: 20%;
+        border: 1px solid white;
     }
 
     .header-text h1 {
-        font-size: 30px;
+        font-size: 47px;
     }
 
     nav{
@@ -58,12 +58,35 @@ nav .fa-solid {
 }
 
 #technologies{
-    .technologies-container{
-        h1.sub-title{
-            font-size:$small-font;
-           
+    .container{
+        .technologies-container{
+
+            padding: 25px 0;
+
+            .technologies-container_contents{
+                .technologies-container_main-contents{
+
+                    width: 100%;
+
+                    .title{
+                        width: 100%;
+                    h2{
+                        font-size: 28px;
+                        text-align: center;
+                        }
+                    }
+
+                    .images{
+                        img{
+                            height:auto;
+                            margin :12px;
+                            height: 40px;
+                        }
+                    }
+
+                }
+            }
         }
-        
     }
 }
 
@@ -77,4 +100,5 @@ nav .fa-solid {
 }
 }
 
-}}
+}
+}

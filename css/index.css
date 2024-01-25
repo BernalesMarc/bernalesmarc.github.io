@@ -312,8 +312,9 @@ nav ul li a:hover::after {
   width: 100%;
 }
 #technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .title h2 {
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
+  padding: 10px 0 10px 0;
 }
 #technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .images {
   display: flex;
@@ -624,11 +625,11 @@ nav .fa-solid {
     background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash%20-%20Copy.jpg);
   }
   #header .header-text {
-    margin-top: 100%;
-    font-size: 16px;
+    margin-top: 20%;
+    border: 1px solid white;
   }
   #header .header-text h1 {
-    font-size: 30px;
+    font-size: 47px;
   }
   #header nav .fa-solid {
     display: block;
@@ -654,8 +655,23 @@ nav .fa-solid {
     display: block;
     margin: 25px;
   }
-  #technologies .technologies-container h1.sub-title {
-    font-size: 35px;
+  #technologies .container .technologies-container {
+    padding: 25px 0;
+  }
+  #technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents {
+    width: 100%;
+  }
+  #technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .title {
+    width: 100%;
+  }
+  #technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .title h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  #technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .images img {
+    height: auto;
+    margin: 12px;
+    height: 40px;
   }
   #contact .row .contact-right {
     flex-basis: 100%;

@@ -32,8 +32,9 @@
   width: 100%;
 }
 #technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .title h2 {
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
+  padding: 10px 0 10px 0;
 }
 #technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .images {
   display: flex;
