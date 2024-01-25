@@ -111,25 +111,6 @@ nav .fa-solid {
   #technologies .technologies-container h1.sub-title {
     font-size: 35px;
   }
-  #technologies .technologies-container .row .col {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-  #technologies .technologies-container .row .col h1 {
-    font-size: 25px;
-    font-weight: 300;
-  }
-  #technologies .technologies-container .row .col .col-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  #technologies .technologies-container .row .col .col-content img {
-    height: 55px;
-  }
   #contact .row .contact-right {
     flex-basis: 100%;
   }

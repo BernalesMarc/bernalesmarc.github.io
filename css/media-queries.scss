@@ -63,30 +63,7 @@ nav .fa-solid {
             font-size:$small-font;
            
         }
-        .row{
-            .col{
-                
-                h1{
-                    font-size:25px;
-                    font-weight:300;
-                }
-
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-                
-                .col-content{
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    img{
-                        height: 55px;
-                    }
-                }
-            }
-        }
+        
     }
 }
 

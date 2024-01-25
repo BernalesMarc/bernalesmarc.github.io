@@ -1,71 +1,61 @@
-#technologies{
-    .container{
-
+#technologies {
+    .container {
         padding: 80px 10%;
 
-    .technologies-container{
-
-        padding: 80px 0;
-
-        margin: 2% 0 2% 0;
-
-        .sub-title {
-            font-size: 60px;
-            font-weight: 600;
-            margin:0 0 3% 0;
-            color:  #712C91;
-          }
         
-        h1{
-            font-size: 60px;
-            margin: 20px 0 0px 0;
-        }
+        .technologies-container {
+            padding: 80px 0;
+            margin: 2% 0;
 
-        .row{
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            //width: 100%;
+            justify-content: space-between; // Idinagdag para sa pantay na espasyo sa pagitan ng mga content boxes
 
-            .col{
+            .sub-title {
+                font-size: 60px;
+                font-weight: 600;
+                margin-bottom: 3%;
+                color: #712C91;
+                width:100%; // Idinagdag para siguraduhing kumukuha ito ng buong lapad
+            }
+
+            .technologies-container_contents {
                 
-                background-color: #262626;
-                border-radius: 20px;
-                //flex-basis: 45%;
-                margin: 10px;
-                height: 200px;
-                width: 45%;
-                padding: 20px 0 0 0;
-                overflow:hidden;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
 
-                h1{
-                    font-size: 30px;
-                    text-align: center;
-                    width: 100%;
-                }
-
-                .col-content{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                .technologies-container_main-contents{
+                    background-color: #262626;
+                    width: 45%;
+                    overflow: hidden;
                     padding: 10px;
-                    
-                    img{
-                        height: 75px;
-                        padding: 10px;
-                        margin: 0 10px 0 10px;
-                        transition: 0.5s ease;
+                    border-radius: 20px;
+                    margin: 10px;
 
-                        &:hover{
-                            transition:  1s ease;
+                    .title{
+                        width: 100%;;
+                    h2{
+                        font-size: 30px;
+                        text-align: center;
                         }
-                        
+                    }
+
+                    .images{
+                        display:flex;
+                        width: 100%;
+                        flex-wrap :wrap;
+                        justify-content: space-around;
+
+                        img{
+                            height:auto; // Binago para mapanatili ang aspect ratio ng mga logo
+                            margin :12px; // In-adjust para sa sentro na alignment
+                            height: 75px;
+                        }
                     }
                 }
                 
-            }
-        }
-
-    }
-}
+             }
+         }
+     }
 }
