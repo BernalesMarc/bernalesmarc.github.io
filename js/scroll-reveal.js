@@ -47,13 +47,13 @@ ScrollReveal({
             interval: 200
         });
 
-        ScrollReveal().reveal('.col-content img', {
+        ScrollReveal().reveal('.technologies-container_main-contents .images img', {
             origin: 'bottom',
             interval: 200,
             delay: 300 // Add a delay of 200ms for each image
           });
 
-          ScrollReveal().reveal('.col', {
+          ScrollReveal().reveal('.technologies-container_main-contents', {
             origin: 'top',
             interval: 400,
             delay: 250 // Add a delay of 200ms for each ".col" element inside ".technologies-container"
