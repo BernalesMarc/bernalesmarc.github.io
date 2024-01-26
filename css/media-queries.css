@@ -110,6 +110,9 @@ nav .fa-solid {
   #technologies .container .technologies-container {
     padding: 25px 0;
   }
+  #technologies .container .technologies-container .sub-title {
+    font-size: 35px;
+  }
   #technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents {
     width: 100%;
   }
