@@ -26,6 +26,9 @@ $default-color: #712C91;
       width: 20%;
     }
   }
+  span{
+    color:#ababab;
+  }
 
   .tabcontent_container_parent{
 
@@ -38,7 +41,7 @@ $default-color: #712C91;
     border-radius: 15px;
     background-color: #1a1919;
     width: 320px;
-    height: 370px; 
+    /* height: 370px; */ 
     text-align: center;
     padding: 10px;
     margin: 20px;
@@ -75,6 +78,7 @@ $default-color: #712C91;
   }
 
   .tabcontent-list {
+  margin: 2% 0 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

@@ -414,6 +414,9 @@ nav ul li a:hover::after {
 .tabcontent h3 img {
   width: 20%;
 }
+.tabcontent span {
+  color: #ababab;
+}
 .tabcontent .tabcontent_container_parent {
   display: flex;
   flex-wrap: wrap;
@@ -424,7 +427,7 @@ nav ul li a:hover::after {
   border-radius: 15px;
   background-color: #1a1919;
   width: 320px;
-  height: 370px;
+  /* height: 370px; */
   text-align: center;
   padding: 10px;
   margin: 20px;
@@ -456,6 +459,7 @@ nav ul li a:hover::after {
   color: white;
 }
 .tabcontent .tabcontent-list {
+  margin: 2% 0 0 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
