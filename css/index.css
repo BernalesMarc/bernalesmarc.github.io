@@ -692,6 +692,7 @@ nav .fa-solid {
   }
   #header .header-text h1 {
     font-size: 55px;
+    margin-top: 25%;
   }
   #header nav .fa-solid {
     display: block;
@@ -726,7 +727,8 @@ nav .fa-solid {
     background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash.jpg);
   }
   #header .header-text h1 {
-    font-size: 60px;
+    font-size: 65px;
+    margin-top: 20%;
   }
 }
 html {
