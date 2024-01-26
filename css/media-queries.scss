@@ -1,7 +1,8 @@
 @import 'header';
 
 $breakpoint-small:600px;
-$breakpoint-medium:900px;
+$breakpoint-medium:999px;
+$breakpoint-laptops:1000px;
 $small-font:35px;
 
 
@@ -102,3 +103,70 @@ nav .fa-solid {
 
 }
 }
+
+@media screen and (min-width: 601px) and (max-width: 999px) {
+   
+    .header-text {
+        margin-top:5% ;
+    }
+
+    #header {
+        background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash.jpg);
+    
+        
+    
+        .header-text h1 {
+            font-size: 55px;
+        }
+    
+        nav{
+            .fa-solid {
+                display: block;
+                font-size: 25px;
+            }
+            ul {
+                background: #262626;
+                position: fixed;
+                top: 0;
+                right: -200px;
+                height: 100vh;
+                padding-top: 50px;
+                z-index: 2;
+                transition: right 0.5s;
+    
+                .fa-solid {
+                    position: absolute;
+                    top: 25px;
+                    left: 25px;
+                    cursor: pointer;
+                }
+    
+                li {
+                    display: block;
+                    margin: 25px;
+                }
+            }
+        }
+    
+    }
+
+  }
+
+  @media screen and (min-width: $breakpoint-laptops) and (max-width: 1199px) {
+   
+    .header-text {
+        margin-top:5% ;
+    }
+
+    #header {
+        background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash.jpg);
+    
+        
+    
+        .header-text h1 {
+            font-size: 60px;;
+        }
+    
+    }
+
+  }

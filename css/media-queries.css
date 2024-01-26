@@ -54,12 +54,12 @@ nav ul li a:hover::after {
 }
 
 .header-text {
-  margin-top: 20%;
+  margin-top: 15%;
   font-size: 20px;
   position: sticky;
 }
 .header-text h1 {
-  font-size: 60px;
+  font-size: 70px;
   margin-top: 20px;
 }
 .header-text span {
@@ -127,5 +127,51 @@ nav .fa-solid {
   }
   #contact .row .contact-right {
     flex-basis: 100%;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 999px) {
+  .header-text {
+    margin-top: 5%;
+  }
+  #header {
+    background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash.jpg);
+  }
+  #header .header-text h1 {
+    font-size: 55px;
+  }
+  #header nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+  #header nav ul {
+    background: #262626;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  #header nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  #header nav ul li {
+    display: block;
+    margin: 25px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1199px) {
+  .header-text {
+    margin-top: 5%;
+  }
+  #header {
+    background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash.jpg);
+  }
+  #header .header-text h1 {
+    font-size: 60px;
   }
 }/*# sourceMappingURL=media-queries.css.map */
