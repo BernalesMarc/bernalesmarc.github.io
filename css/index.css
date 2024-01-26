@@ -517,12 +517,20 @@ nav ul li a:hover::after {
   margin: 30px;
 }
 #Projects .container .Projects-list div p {
-  font-size: 16px;
+  font-size: 18px;
+  height: 100px;
+  margin: 10px 0 10px 0;
+  overflow: hidden;
+  /* border: 1px solid white; */
+  width: 100%;
 }
 #Projects .container .Projects-list div h2 {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 500;
-  margin: 15px;
+  margin: 15px 0 15px 0;
+  /* border: 1px solid red; */
+  height: 85px;
+  overflow: hidden;
 }
 #Projects .container .Projects-list div:hover {
   border: 5px solid #712C91;
@@ -540,7 +548,6 @@ nav ul li a:hover::after {
   color: #712C91;
   outline: none;
   cursor: pointer;
-  padding: 10px;
   transition: 0.2s ease;
   font-size: 17px;
 }
