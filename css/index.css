@@ -555,6 +555,21 @@ nav ul li a:hover::after {
   font-size: 17px;
 }
 
+#footer {
+  overflow: hidden;
+}
+#footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  background-color: #1a1919;
+}
+#footer .container h4 {
+  text-align: center;
+  color: #ababab;
+}
+
 #header {
   width: 100%;
   height: 100vh;

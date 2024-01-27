@@ -1,0 +1,14 @@
+#footer {
+  overflow: hidden;
+}
+#footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  background-color: #1a1919;
+}
+#footer .container h4 {
+  text-align: center;
+  color: #ababab;
+}/*# sourceMappingURL=footer.css.map */
