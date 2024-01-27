@@ -12,7 +12,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
 }
 
 .container {
@@ -564,7 +563,6 @@ nav ul li a:hover::after {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
 }
 
 .container {
