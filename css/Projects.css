@@ -116,6 +116,7 @@
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s, 1s ease;
   overflow: hidden;
+  height: 450px;
 }
 #Projects .container .Projects-list div i {
   font-size: 50px;
