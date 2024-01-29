@@ -95,17 +95,21 @@ nav .fa-solid {
     }
 }
 
+    #contact {
+        .container {
+            .row {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
 
-#contact{
-    .row {
-        
-        .contact-right {
-                flex-basis: 100%;
-            
-}
-}
+                @media (max-width: 600px) {
+                    display: block;
+                }
+            }
+        }
+    }
 
-}
+    
 }
 
 @media screen and (min-width: 601px) and (max-width: 999px) {
@@ -155,9 +159,23 @@ nav .fa-solid {
     
     }
 
+    #contact {
+        .container {
+            .row {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                @media (max-width: 600px) {
+                    display: block;
+                }
+            }
+        }
+    }
+
   }
 
-  @media screen and (min-width: $breakpoint-laptops) and (max-width: 1199px) {
+  @media screen and (min-width: $breakpoint-laptops) and (max-width: 1299px) {
    
     .header-text {
         margin-top:5% ;
@@ -173,6 +191,20 @@ nav .fa-solid {
             margin-top: 20%;
         }
     
+    }
+
+    #contact {
+        .container {
+            .row {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                @media (max-width: 600px) {
+                    display: block;
+                }
+            }
+        }
     }
 
   }

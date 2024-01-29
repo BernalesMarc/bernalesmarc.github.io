@@ -127,8 +127,15 @@ nav .fa-solid {
     margin: 12px;
     height: 40px;
   }
-  #contact .row .contact-right {
-    flex-basis: 100%;
+  #contact .container .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 600px) and (max-width: 600px) {
+  #contact .container .row {
+    display: block;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 999px) {
@@ -166,8 +173,18 @@ nav .fa-solid {
     display: block;
     margin: 25px;
   }
+  #contact .container .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
-@media screen and (min-width: 1000px) and (max-width: 1199px) {
+@media screen and (min-width: 601px) and (max-width: 999px) and (max-width: 600px) {
+  #contact .container .row {
+    display: block;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1299px) {
   .header-text {
     margin-top: 5%;
   }
@@ -177,5 +194,15 @@ nav .fa-solid {
   #header .header-text h1 {
     font-size: 65px;
     margin-top: 20%;
+  }
+  #contact .container .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1299px) and (max-width: 600px) {
+  #contact .container .row {
+    display: block;
   }
 }/*# sourceMappingURL=media-queries.css.map */
