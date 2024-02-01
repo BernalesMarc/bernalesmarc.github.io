@@ -249,7 +249,7 @@
                 <div class="tabcontent_container_parent">
 
                     <div class="tabcontent_container">
-                        <div class="tabcontent_container_img"> <h2>UCC Student Research Center</h2><br>  <div><img src="css/img/StudentCenter/srclogo.png" alt=""></div> </div>
+                        <div class="tabcontent_container_img"> <h2>UCC Student Research Center</h2><br>  <div></div> </div>
                         <div class="tabcontent_container_btn"><button class="tablinks" onclick="projects_name(event, 'Student_Center')" id="defaultOpen">See more</button></div>
                     </div>
               </div>
@@ -279,7 +279,7 @@
                     <div><img src="css/img/logo/melolog2.png" alt=""></div>
                 </div>
 
-              </div>
+            </div>
 
             <div id="Ui" class="tabcontent">
                 <span onclick="this.parentElement.style.display='none'" class="topright"><a href="#projects">&times</a></span>
@@ -288,9 +288,18 @@
 
                     <div class="tabcontent_container">
                         <div class="tabcontent_container_img"> <img src="css/img/moma ui/Moma.png" alt=""></div>
-                        <div class="tabcontent_container_btn"><button class="tablinks" onclick="projects_name(event, 'ui_content')" id="defaultOpen">See more</button></div>
+                        <div class="tabcontent_container_btn"><button class="tablinks" onclick="projects_name(event, 'moma')" id="defaultOpen">See more</button></div>
                     </div>
+
+                    <div class="tabcontent_container">
+                        <div class="tabcontent_container_img"> <img src="css/img/Aurelia/Vector (3).png" alt=""></div>
+                        <div class="tabcontent_container_btn"><button class="tablinks" onclick="projects_name(event, 'Aurelia')" id="defaultOpen">See more</button></div>
+                    </div>
+
               </div>
+
+             
+
           </div>
 
           <div id="Photography" class="tabcontent">
@@ -326,7 +335,7 @@
           
           <!--ux/ui portfolio-->
 
-          <div id="ui_content" class="tabcontent">
+          <div id="moma" class="tabcontent">
             <span onclick="this.parentElement.style.display='none'" class="topright"><a href="#projects">&times</a></span>
             <h3><img src="css/img/moma ui/Moma.png" alt=""></h3>
             <span>A UI movie App</span>
@@ -343,6 +352,21 @@
             </div>
 
           </div>
+
+          <div id="Aurelia" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" class="topright"><a href="#projects">&times</a></span>
+            <h3><img src="css/img/Aurelia/Vector (3).png" alt=""></h3>
+            <span>A UI for an E-Waller App</span>
+
+            <div class="tabcontent-list">
+                <div><img src="css/img/Aurelia/lockscreen.png" alt=""></div>
+                <div><img src="css/img/Aurelia/home.png" alt=""></div>
+                <div><img src="css/img/Aurelia/wallet.png" alt=""></div>
+                <div><img src="css/img/Aurelia/savings.png" alt=""></div>
+            </div>
+
+          </div>
+         
           
         </div>
 
@@ -384,33 +408,7 @@
                         </form>
 
                         <script src="https://smtpjs.com/v3/smtp.js"></script>
-                            <script>
-                                document.getElementById("emailForm").addEventListener("submit", function (e) {
-                                    e.preventDefault();
-                                    sendEmail();
-                                });
-
-                                function sendEmail() {
-                                    const name = document.getElementById("name").value;
-                                    const email = document.getElementById("email").value;
-                                    const message = document.getElementById("message").value;
-
-                                    const bodymessage = `Full Name: ${name} <br> Email: ${email} <br> Message: ${message}`;
-
-                                    Email.send({
-                                        Host: "smtp.elasticemail.com",
-                                        Username: "marcadriancbernales699@gmail.com",
-                                        Password: "B6E77F570F631596B123F37EF650F7383EDC",
-                                        To: 'marcadriancbernales699@gmail.com',
-                                        From: 'marcadriancbernales699@gmail.com',
-                                        Subject: "This is the subject",
-                                        Body: bodymessage,
-                                        ContentType: "text/html; charset=utf-8"
-                                    }).then(
-                                        message => alert(message)
-                                    );
-                                }
-                            </script>
+                            <script src="js/sendemail.js"></script>
 
                     </div>
     
