@@ -711,6 +711,11 @@ nav .fa-solid {
     display: block;
   }
 }
+@media only screen and (max-width: 600px) {
+  #contact .container .row .contact-left p {
+    font-size: 16px;
+  }
+}
 @media screen and (min-width: 601px) and (max-width: 999px) {
   .header-text {
     margin-top: 5%;
@@ -757,6 +762,11 @@ nav .fa-solid {
     display: block;
   }
 }
+@media screen and (min-width: 601px) and (max-width: 999px) {
+  #contact .container .row .contact-left p {
+    font-size: 18px;
+  }
+}
 @media screen and (min-width: 1000px) and (max-width: 1299px) {
   .header-text {
     margin-top: 5%;
@@ -777,6 +787,11 @@ nav .fa-solid {
 @media screen and (min-width: 1000px) and (max-width: 1299px) and (max-width: 600px) {
   #contact .container .row {
     display: block;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1299px) {
+  #contact .container .row .contact-left p {
+    font-size: 20px;
   }
 }
 html {
