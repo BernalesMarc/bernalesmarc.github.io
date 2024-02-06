@@ -24,10 +24,12 @@ $default-color: #712C91;
   h3{
     img{
       width: 20%;
+      padding: 0 0 25px 0;
     }
   }
   span{
     color:#ababab;
+    //font-size: 18px;
   }
 
   .tabcontent_container_parent{
@@ -95,7 +97,7 @@ div{
       height: 100%; 
       object-fit: contain; 
       padding: 20px;
-      
+     
     }
     }
 }
