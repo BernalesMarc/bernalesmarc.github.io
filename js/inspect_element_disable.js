@@ -9,3 +9,5 @@ document.onkeydown = function(e) {
         return false;
     }
 };
+
+document.body.style.userSelect = 'none';
