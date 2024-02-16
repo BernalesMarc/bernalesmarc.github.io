@@ -396,6 +396,38 @@ nav ul li a:hover::after {
   border-radius: 6px;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  max-width: 600px;
+  overflow: auto;
+  background-color: #262626;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+}
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .tab {
   overflow: hidden;
 }
@@ -644,6 +676,9 @@ nav .fa-solid {
 }
 
 @media only screen and (max-width: 600px) {
+  .openModalButton {
+    pointer-events: none;
+  }
   .sub-title {
     font-size: 35px;
   }
@@ -718,6 +753,9 @@ nav .fa-solid {
   }
 }
 @media screen and (min-width: 601px) and (max-width: 999px) {
+  .openModalButton {
+    pointer-events: none;
+  }
   .header-text {
     margin-top: 5%;
   }
@@ -769,6 +807,9 @@ nav .fa-solid {
   }
 }
 @media screen and (min-width: 1000px) and (max-width: 1299px) {
+  .openModalButton {
+    pointer-events: none;
+  }
   .header-text {
     margin-top: 5%;
   }

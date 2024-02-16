@@ -12,6 +12,11 @@ nav .fa-solid {
 
 @media only screen and (max-width: $breakpoint-small) {
 
+
+    .openModalButton {
+        pointer-events: none;
+      }
+
     .sub-title{
         font-size:$small-font;
     }
@@ -120,6 +125,10 @@ nav .fa-solid {
 
 @media screen and (min-width: 601px) and (max-width: 999px) {
    
+    .openModalButton {
+        pointer-events: none;
+      }
+
     .header-text {
         margin-top:5% ;
     }
@@ -187,7 +196,10 @@ nav .fa-solid {
   }
 
   @media screen and (min-width: $breakpoint-laptops) and (max-width: 1299px) {
-   
+    .openModalButton {
+        pointer-events: none;
+      }
+
     .header-text {
         margin-top:5% ;
     }

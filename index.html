@@ -118,6 +118,14 @@
 
             </div>
 
+            <!--------Modal-------->
+            
+            <div id="myModal" class="modal">
+                <span class="close"onclick="closeModal()">&times;</span>
+                <img class="modal-content" id="modalImage">
+               
+            </div>           
+
             <!--------accordion-------->
 
             <button class="accordion"></button>
@@ -201,6 +209,15 @@
                         </div>
                     </div>
 
+                    <div class="technologies-container_main-contents">
+                        <div class="title">
+                            <h2>Database</h2>
+                        </div>
+                        <div class="images">
+                            <img src="css/img/logo/MsSqlserver.svg" alt="">
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
@@ -280,7 +297,7 @@
                 </div>
 
             </div>
-  
+
             <div id="logo" class="tabcontent">
                 <span onclick="this.parentElement.style.display='none'" class="topright"><a href="#projects">&times</a></span>
                 <h2>Logo</h2>
@@ -332,11 +349,12 @@
                 <h3>Photography</h3>
 
                 <div class="tabcontent-list">
-                    <div><img src="css/img/photography/davilan.jpg" alt=""></div>
-                    <div><img src="css/img/photography/intramuros.jpg" alt=""></div>
-                    <div><img src="css/img/photography/intramuros 2.jpg" alt=""></div>
-                    <div><img src="css/img/photography/mtb tagayta.jpg" alt=""></div>
+                    <div><img src="css/img/photography/davilan.jpg" alt="" class="openModalButton"></div>
+                    <div><img src="css/img/photography/intramuros.jpg" alt=""  class="openModalButton"></div>
+                    <div><img src="css/img/photography/intramuros 2.jpg" alt=""  class="openModalButton"></div>
+                    <div><img src="css/img/photography/mtb tagayta.jpg" alt=""  class="openModalButton"></div>
                 </div>
+                
 
             </div>
 
@@ -485,12 +503,14 @@
 
     <!--
 
+         <script src="js/modal_img.js">
+    </script>
+
         <script src="js/inspect_element_disable.js"></script>
 
      -->
 
      <script src="js/inspect_element_disable.js"></script>
-
 
 </body>
 
