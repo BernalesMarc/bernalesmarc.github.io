@@ -18,4 +18,4 @@ document.addEventListener("keydown", function (e) {
     }
 });
 
-document.body.style.userSelect = 'none';
+document.body.style.userSelect = 'none'; 
