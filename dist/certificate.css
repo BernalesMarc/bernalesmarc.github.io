@@ -1,0 +1,86 @@
+#certificate {
+  padding: 50px 0;
+}
+#certificate .certificate-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+#certificate .certificate-list .certificate {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+#certificate .certificate-list .certificate img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  height: 100%;
+}
+#certificate .certificate-list .certificate .layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #712C91);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+#certificate .certificate-list .certificate .layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#certificate .certificate-list .certificate:hover img {
+  transform: scale(1.1);
+}
+#certificate .certificate-list .certificate:hover .layer {
+  height: 100%;
+}
+#certificate .btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #712C91;
+  padding: 14px 50px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+  transition: background 0.5s;
+}
+#certificate .btn:hover {
+  background: #712C91;
+}
+#certificate .accordion {
+  display: flex;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #712C91;
+  padding: 14px 50px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+  transition: background 0.5s;
+  background: #080808;
+}
+#certificate .accordion.active, #certificate .accordion:hover {
+  background: #712C91;
+}
+#certificate .accordion::after {
+  content: "See more";
+  transition: 0.5s ease;
+}
+#certificate .accordion.active::after {
+  content: "See less";
+  transition: 0.5s ease;
+}

@@ -1,0 +1,238 @@
+@import 'header';
+
+$breakpoint-small:600px;
+$breakpoint-medium:999px;
+$breakpoint-laptops:1000px;
+$small-font:35px;
+
+
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width: $breakpoint-small) {
+
+
+    .openModalButton {
+        pointer-events: none;
+      }
+
+    .sub-title{
+        font-size:$small-font;
+    }
+
+#header {
+    background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash%20-%20Copy.jpg);
+
+    .header-text {
+        margin-top: 20%;
+    }
+
+    .header-text h1 {
+        font-size: 47px;
+    }
+
+    nav{
+        .fa-solid {
+            display: block;
+            font-size: 25px;
+        }
+        ul {
+            background: #262626;
+            position: fixed;
+            top: 0;
+            right: -200px;
+            height: 100vh;
+            padding-top: 50px;
+            z-index: 2;
+            transition: right 0.5s;
+
+            .fa-solid {
+                position: absolute;
+                top: 25px;
+                left: 25px;
+                cursor: pointer;
+            }
+
+            li {
+                display: block;
+                margin: 25px;
+            }
+        }
+    }
+
+}
+
+#technologies{
+    .container{
+        .technologies-container{
+
+            padding: 25px 0;
+
+            .sub-title {
+                font-size: 35px;
+            }
+
+            .technologies-container_contents{
+                .technologies-container_main-contents{
+
+                    width: 100%;
+
+                    .title{
+                        width: 100%;
+                    h2{
+                        font-size: 28px;
+                        text-align: center;
+                        }
+                    }
+
+                    .images{
+                        img{
+                            height:auto;
+                            margin :12px;
+                            height: 40px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+    #contact {
+        .container {
+            .row {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                @media (max-width: 600px) {
+                    display: block;
+                }
+                .contact-left{
+                    p{
+                    font-size: 16px;
+                    }
+                }
+            }
+           
+        }
+    }
+
+    
+}
+
+@media screen and (min-width: 601px) and (max-width: 999px) {
+   
+    .openModalButton {
+        pointer-events: none;
+      }
+
+    .header-text {
+        margin-top:5% ;
+    }
+
+    #header {
+        background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash.jpg);
+    
+        
+    
+        .header-text h1 {
+            font-size: 55px;
+            margin-top: 25%;
+        }
+    
+        nav{
+            .fa-solid {
+                display: block;
+                font-size: 25px;
+            }
+            ul {
+                background: #262626;
+                position: fixed;
+                top: 0;
+                right: -200px;
+                height: 100vh;
+                padding-top: 50px;
+                z-index: 2;
+                transition: right 0.5s;
+    
+                .fa-solid {
+                    position: absolute;
+                    top: 25px;
+                    left: 25px;
+                    cursor: pointer;
+                }
+    
+                li {
+                    display: block;
+                    margin: 25px;
+                }
+            }
+        }
+    
+    }
+
+    #contact {
+        .container {
+            .row {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                @media (max-width: 600px) {
+                    display: block;
+                }
+                .contact-left{
+                    p{
+                    font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+
+  }
+
+  @media screen and (min-width: $breakpoint-laptops) and (max-width: 1299px) {
+    .openModalButton {
+        pointer-events: none;
+      }
+
+    .header-text {
+        margin-top:5% ;
+    }
+
+    #header {
+        background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash.jpg);
+    
+        
+    
+        .header-text h1 {
+            font-size: 65px;
+            margin-top: 20%;
+        }
+    
+    }
+
+    #contact {
+        .container {
+            .row {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                @media (max-width: 600px) {
+                    display: block;
+                }
+                .contact-left{
+                    p{
+                    font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+  }

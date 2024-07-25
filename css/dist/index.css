@@ -1,0 +1,619 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transition: 0.5s ease;
+  padding: 10px 25px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #712C91;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.logo {
+  width: 140px;
+}
+
+.header-text {
+  margin-top: 20%;
+  font-size: 20px;
+  position: sticky;
+}
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+.header-text span {
+  color: #712C91;
+}
+
+#about {
+  padding: 80px 0;
+  color: #ababab;
+}
+#about .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#about .row .about-col-1 {
+  flex-basis: 35%;
+}
+#about .row .about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+#about .row .about-col-2 {
+  flex-basis: 60%;
+}
+#about .row .about-col-2 p {
+  font-size: 22px;
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #712C91;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-titles .tab-links {
+  margin: 0 0 0 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-titles .tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #712C91;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-titles .tab-links.active-link::after {
+  width: 50%;
+}
+
+.tab-contents {
+  display: none;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+  font-size: 18px;
+}
+.tab-contents ul li span {
+  color: #794293;
+  font-size: 22px;
+}
+.tab-contents.active-tab {
+  display: block;
+}
+
+#certificate {
+  padding: 50px 0;
+}
+#certificate .certificate-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+#certificate .certificate-list .certificate {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+#certificate .certificate-list .certificate img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  height: 100%;
+}
+#certificate .certificate-list .certificate .layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #712C91);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+#certificate .certificate-list .certificate .layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#certificate .certificate-list .certificate:hover img {
+  transform: scale(1.1);
+}
+#certificate .certificate-list .certificate:hover .layer {
+  height: 100%;
+}
+#certificate .btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #712C91;
+  padding: 14px 50px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+  transition: background 0.5s;
+}
+#certificate .btn:hover {
+  background: #712C91;
+}
+#certificate .accordion {
+  display: flex;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #712C91;
+  padding: 14px 50px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+  transition: background 0.5s;
+  background: #080808;
+}
+#certificate .accordion.active, #certificate .accordion:hover {
+  background: #712C91;
+}
+#certificate .accordion::after {
+  content: "See more";
+  transition: 0.5s ease;
+}
+#certificate .accordion.active::after {
+  content: "See less";
+  transition: 0.5s ease;
+}
+
+.panel {
+  background-color: #262626;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-radius: 10px;
+}
+.panel .panel-list {
+  padding: 1%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+}
+.panel .panel-list .certificate {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.panel .panel-list .certificate img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  height: 100%;
+}
+.panel .panel-list .certificate .layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #712C91);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.panel .panel-list .certificate:hover .layer {
+  height: 100%;
+}
+
+#technologies .technologies-container {
+  padding: 10px 10%;
+  margin: 2% 0 2% 0;
+}
+#technologies .technologies-container .sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0 0 2% 0;
+  color: #712C91;
+}
+#technologies .technologies-container h1 {
+  font-size: 60px;
+  margin: 20px 0 0px 0;
+}
+#technologies .technologies-container .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#technologies .technologies-container .row .col {
+  background-color: #262626;
+  border-radius: 20px;
+  margin: 10px;
+  height: 200px;
+  width: 45%;
+  padding: 20px 0 0 0;
+  overflow: hidden;
+}
+#technologies .technologies-container .row .col h1 {
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+}
+#technologies .technologies-container .row .col .col-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+#technologies .technologies-container .row .col .col-content img {
+  height: 75px;
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  transition: 0.5s ease;
+}
+#technologies .technologies-container .row .col .col-content img:hover {
+  transition: 1s ease;
+}
+
+#contact .sub-title {
+  margin: 10px 0 10px 0;
+}
+#contact .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#contact .row .btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #712C91;
+  background: #080808;
+  padding: 14px 50px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+  transition: background 0.5s;
+}
+#contact .row .btn:hover {
+  background: #712C91;
+}
+#contact .row .contact-left {
+  flex-basis: 35%;
+}
+#contact .row .contact-left p i {
+  color: #712C91;
+  margin: 15px;
+  font-size: 25px;
+}
+#contact .row .contact-left .social-icons {
+  margin-top: 30px;
+}
+#contact .row .contact-left .social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+#contact .row .contact-left .social-icons a:hover {
+  color: #712C91;
+  transform: translatey(-5px);
+}
+#contact .row .contact-right {
+  flex-basis: 60%;
+  width: 100%;
+}
+#contact .row .contact-right form {
+  width: 100%;
+}
+#contact .row .contact-right form input, #contact .row .contact-right form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.tab {
+  overflow: hidden;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  background: #262626;
+  margin: 2% 0 0 0;
+  padding: 25px;
+  border-radius: 12px;
+}
+.tabcontent .tabcontent-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tabcontent .tabcontent-list img {
+  height: 140px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+.topright:hover {
+  color: #712C91;
+}
+
+#Projects .Projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  transition: 1s ease;
+}
+#Projects .Projects-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: 10px;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s, 1s ease;
+  overflow: hidden;
+}
+#Projects .Projects-list div i {
+  font-size: 50px;
+  margin: 30px;
+}
+#Projects .Projects-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 15px;
+}
+#Projects .Projects-list div:hover {
+  border: 5px solid #712C91;
+  transform: translateY(-35px);
+  transition: 0.5s ease;
+}
+#Projects .Projects-list div:hover button:hover {
+  color: white;
+}
+#Projects .Projects-list div button {
+  margin: 6% 0 0 0;
+  background-color: #262626;
+  float: left;
+  border: none;
+  color: #712C91;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.2s ease;
+  font-size: 17px;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transition: 0.5s ease;
+  padding: 10px 25px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #712C91;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.logo {
+  width: 140px;
+}
+
+.header-text {
+  margin-top: 20%;
+  font-size: 20px;
+  position: sticky;
+}
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+.header-text span {
+  color: #712C91;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .sub-title {
+    font-size: 35px;
+  }
+
+  #header {
+    background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash%20-%20Copy.jpg);
+  }
+  #header .header-text {
+    margin-top: 100%;
+    font-size: 16px;
+  }
+  #header .header-text h1 {
+    font-size: 30px;
+  }
+  #header nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+  #header nav ul {
+    background: #262626;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  #header nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  #header nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  #technologies .technologies-container h1.sub-title {
+    font-size: 35px;
+  }
+  #technologies .technologies-container .row .col {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  #technologies .technologies-container .row .col h1 {
+    font-size: 25px;
+    font-weight: 300;
+  }
+  #technologies .technologies-container .row .col .col-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #technologies .technologies-container .row .col .col-content img {
+    height: 55px;
+  }
+
+  #contact .row .contact-right {
+    flex-basis: 100%;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080808;
+  color: #fff;
+}

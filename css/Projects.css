@@ -1,0 +1,192 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  max-width: 600px;
+  overflow: auto;
+  background-color: #262626;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+}
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tab {
+  overflow: hidden;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  background: #262626;
+  margin: 2% 0 0 0;
+  padding: 25px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.tabcontent h3 img {
+  width: 20%;
+  padding: 0 0 25px 0;
+}
+.tabcontent span {
+  color: #ababab;
+}
+.tabcontent .tabcontent_container_parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+.tabcontent .tabcontent_container_parent .tabcontent_container {
+  border-radius: 15px;
+  background-color: #1a1919;
+  width: 320px;
+  /* height: 370px; */
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tabcontent .tabcontent_container_parent .tabcontent_container_img img {
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.tabcontent .tabcontent_container_parent .tabcontent_container_btn button {
+  margin: 6% 0 0 0;
+  background-color: rgba(0, 0, 0, 0);
+  float: left;
+  border: none;
+  color: #712C91;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.2s ease;
+  font-size: 17px;
+}
+.tabcontent .tabcontent_container_parent .tabcontent_container_btn button:hover {
+  color: white;
+}
+.tabcontent .tabcontent-list {
+  margin: 2% 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tabcontent .tabcontent-list div {
+  border-radius: 15px;
+  background-color: #1a1919;
+  width: 320px;
+  height: 370px;
+  overflow: hidden;
+  margin: 10px;
+}
+.tabcontent .tabcontent-list div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 20px;
+}
+
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+.topright:hover {
+  color: #712C91;
+}
+.topright a {
+  text-decoration: none;
+  color: inherit;
+}
+.topright a:hover {
+  text-decoration: none;
+}
+
+#Projects .container {
+  padding: 130px 10%;
+}
+#Projects .container .Projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  transition: 1s ease;
+}
+#Projects .container .Projects-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: 10px;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s, 1s ease;
+  overflow: hidden;
+  height: 450px;
+}
+#Projects .container .Projects-list div i {
+  font-size: 50px;
+  margin: 30px;
+}
+#Projects .container .Projects-list div p {
+  font-size: 18px;
+  height: 100px;
+  margin: 10px 0 10px 0;
+  overflow: hidden;
+  /* border: 1px solid white; */
+  width: 100%;
+}
+#Projects .container .Projects-list div h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 15px 0 15px 0;
+  /* border: 1px solid red; */
+  height: 85px;
+  overflow: hidden;
+}
+#Projects .container .Projects-list div:hover {
+  border: 5px solid #712C91;
+  transform: translateY(-35px);
+  transition: 0.5s ease;
+}
+#Projects .container .Projects-list div:hover button:hover {
+  color: white;
+}
+#Projects .container .Projects-list div button {
+  margin: 6% 0 0 0;
+  background-color: #262626;
+  float: left;
+  border: none;
+  color: #712C91;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size: 17px;
+}/*# sourceMappingURL=Projects.css.map */

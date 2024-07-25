@@ -1,0 +1,49 @@
+#technologies .container {
+  padding: 80px 10%;
+}
+#technologies .container .technologies-container {
+  padding: 80px 0;
+  margin: 2% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#technologies .container .technologies-container .sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 3%;
+  color: #712C91;
+  width: 100%;
+}
+#technologies .container .technologies-container .technologies-container_contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents {
+  background-color: #262626;
+  width: 45%;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+}
+#technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .title {
+  width: 100%;
+}
+#technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .title h2 {
+  font-size: 35px;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+#technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .images {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .images img {
+  height: auto;
+  margin: 12px;
+  height: 75px;
+}/*# sourceMappingURL=technologies.css.map */

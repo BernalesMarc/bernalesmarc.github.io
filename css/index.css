@@ -1,0 +1,846 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  padding: 80px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transition: 0.5s ease;
+  padding: 10px 25px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #712C91;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.logo {
+  width: 140px;
+}
+
+.header-text {
+  margin-top: 15%;
+  font-size: 20px;
+  position: sticky;
+}
+.header-text h1 {
+  font-size: 70px;
+  margin-top: 20px;
+}
+.header-text span {
+  color: #712C91;
+}
+
+#about {
+  padding: 80px 0;
+  color: #ababab;
+}
+#about .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#about .row .about-col-1 {
+  flex-basis: 35%;
+}
+#about .row .about-col-1 img {
+  width: 100%;
+  border-radius: 15px;
+}
+#about .row .about-col-2 {
+  flex-basis: 60%;
+}
+#about .row .about-col-2 p {
+  font-size: 22px;
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #712C91;
+}
+
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+.tab-titles .tab-links {
+  margin: 0 0 0 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+.tab-titles .tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #712C91;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+.tab-titles .tab-links.active-link::after {
+  width: 50%;
+}
+
+.tab-contents {
+  display: none;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+  font-size: 18px;
+}
+.tab-contents ul li span {
+  color: #794293;
+  font-size: 22px;
+}
+.tab-contents.active-tab {
+  display: block;
+}
+
+#certificate {
+  padding: 50px 0;
+}
+#certificate .certificate-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+#certificate .certificate-list .certificate {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+#certificate .certificate-list .certificate img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  height: 100%;
+}
+#certificate .certificate-list .certificate .layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #712C91);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+#certificate .certificate-list .certificate .layer h3 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#certificate .certificate-list .certificate:hover img {
+  transform: scale(1.1);
+}
+#certificate .certificate-list .certificate:hover .layer {
+  height: 100%;
+}
+#certificate .btn {
+  display: block;
+  margin: 50px auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #712C91;
+  padding: 14px 50px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+  transition: background 0.5s;
+}
+#certificate .btn:hover {
+  background: #712C91;
+}
+#certificate .accordion {
+  display: flex;
+  margin: 50px auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #712C91;
+  padding: 14px 50px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+  transition: background 0.5s;
+  background: #080808;
+}
+#certificate .accordion.active, #certificate .accordion:hover {
+  background: #712C91;
+}
+#certificate .accordion::after {
+  content: "See more";
+  transition: 0.5s ease;
+}
+#certificate .accordion.active::after {
+  content: "See less";
+  transition: 0.5s ease;
+}
+
+.panel {
+  background-color: #262626;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-radius: 10px;
+}
+.panel .panel-list {
+  padding: 1%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+}
+.panel .panel-list .certificate {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.panel .panel-list .certificate img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  height: 100%;
+}
+.panel .panel-list .certificate .layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #712C91);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.panel .panel-list .certificate:hover .layer {
+  height: 100%;
+}
+
+#technologies .container {
+  padding: 80px 10%;
+}
+#technologies .container .technologies-container {
+  padding: 80px 0;
+  margin: 2% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#technologies .container .technologies-container .sub-title {
+  font-size: 60px;
+  font-weight: 600;
+  margin-bottom: 3%;
+  color: #712C91;
+  width: 100%;
+}
+#technologies .container .technologies-container .technologies-container_contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents {
+  background-color: #262626;
+  width: 45%;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+}
+#technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .title {
+  width: 100%;
+}
+#technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .title h2 {
+  font-size: 35px;
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+#technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .images {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .images img {
+  height: auto;
+  margin: 12px;
+  height: 75px;
+}
+
+#contact .container {
+  padding: 80px 10%;
+}
+#contact .container .sub-title {
+  margin: 10px 0 10px 0;
+}
+#contact .container .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#contact .container .row .btn {
+  display: block;
+  margin: 50px auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #712C91;
+  background: #080808;
+  padding: 14px 50px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 8px;
+  transition: background 0.5s;
+}
+#contact .container .row .btn:hover {
+  background: #712C91;
+}
+#contact .container .row .contact-left {
+  flex-basis: 35%;
+}
+#contact .container .row .contact-left p i {
+  color: #712C91;
+  margin: 15px;
+  font-size: 25px;
+}
+#contact .container .row .contact-left .social-icons {
+  margin-top: 30px;
+}
+#contact .container .row .contact-left .social-icons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+#contact .container .row .contact-left .social-icons a:hover {
+  color: #712C91;
+  transform: translatey(-5px);
+}
+#contact .container .row .contact-right {
+  flex-basis: 60%;
+  width: 100%;
+}
+#contact .container .row .contact-right form {
+  width: 100%;
+}
+#contact .container .row .contact-right form input, #contact .container .row .contact-right form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  max-width: 600px;
+  overflow: auto;
+  background-color: #262626;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+}
+.close:hover, .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tab {
+  overflow: hidden;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  background: #262626;
+  margin: 2% 0 0 0;
+  padding: 25px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.tabcontent h3 img {
+  width: 20%;
+  padding: 0 0 25px 0;
+}
+.tabcontent span {
+  color: #ababab;
+}
+.tabcontent .tabcontent_container_parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+.tabcontent .tabcontent_container_parent .tabcontent_container {
+  border-radius: 15px;
+  background-color: #1a1919;
+  width: 320px;
+  /* height: 370px; */
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tabcontent .tabcontent_container_parent .tabcontent_container_img img {
+  padding: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.tabcontent .tabcontent_container_parent .tabcontent_container_btn button {
+  margin: 6% 0 0 0;
+  background-color: rgba(0, 0, 0, 0);
+  float: left;
+  border: none;
+  color: #712C91;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.2s ease;
+  font-size: 17px;
+}
+.tabcontent .tabcontent_container_parent .tabcontent_container_btn button:hover {
+  color: white;
+}
+.tabcontent .tabcontent-list {
+  margin: 2% 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tabcontent .tabcontent-list div {
+  border-radius: 15px;
+  background-color: #1a1919;
+  width: 320px;
+  height: 370px;
+  overflow: hidden;
+  margin: 10px;
+}
+.tabcontent .tabcontent-list div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 20px;
+}
+
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+.topright:hover {
+  color: #712C91;
+}
+.topright a {
+  text-decoration: none;
+  color: inherit;
+}
+.topright a:hover {
+  text-decoration: none;
+}
+
+#Projects .container {
+  padding: 130px 10%;
+}
+#Projects .container .Projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  transition: 1s ease;
+}
+#Projects .container .Projects-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: 10px;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s, 1s ease;
+  overflow: hidden;
+  height: 450px;
+}
+#Projects .container .Projects-list div i {
+  font-size: 50px;
+  margin: 30px;
+}
+#Projects .container .Projects-list div p {
+  font-size: 18px;
+  height: 100px;
+  margin: 10px 0 10px 0;
+  overflow: hidden;
+  /* border: 1px solid white; */
+  width: 100%;
+}
+#Projects .container .Projects-list div h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 15px 0 15px 0;
+  /* border: 1px solid red; */
+  height: 85px;
+  overflow: hidden;
+}
+#Projects .container .Projects-list div:hover {
+  border: 5px solid #712C91;
+  transform: translateY(-35px);
+  transition: 0.5s ease;
+}
+#Projects .container .Projects-list div:hover button:hover {
+  color: white;
+}
+#Projects .container .Projects-list div button {
+  margin: 6% 0 0 0;
+  background-color: #262626;
+  float: left;
+  border: none;
+  color: #712C91;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size: 17px;
+}
+
+#footer {
+  overflow: hidden;
+}
+#footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  background-color: #1a1919;
+}
+#footer .container h4 {
+  text-align: center;
+  color: #ababab;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  padding: 80px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  transition: 0.5s ease;
+  padding: 10px 25px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #712C91;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.logo {
+  width: 140px;
+}
+
+.header-text {
+  margin-top: 15%;
+  font-size: 20px;
+  position: sticky;
+}
+.header-text h1 {
+  font-size: 70px;
+  margin-top: 20px;
+}
+.header-text span {
+  color: #712C91;
+}
+
+nav .fa-solid {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .openModalButton {
+    pointer-events: none;
+  }
+  .sub-title {
+    font-size: 35px;
+  }
+  #header {
+    background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash%20-%20Copy.jpg);
+  }
+  #header .header-text {
+    margin-top: 20%;
+  }
+  #header .header-text h1 {
+    font-size: 47px;
+  }
+  #header nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+  #header nav ul {
+    background: #262626;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  #header nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  #header nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  #technologies .container .technologies-container {
+    padding: 25px 0;
+  }
+  #technologies .container .technologies-container .sub-title {
+    font-size: 35px;
+  }
+  #technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents {
+    width: 100%;
+  }
+  #technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .title {
+    width: 100%;
+  }
+  #technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .title h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  #technologies .container .technologies-container .technologies-container_contents .technologies-container_main-contents .images img {
+    height: auto;
+    margin: 12px;
+    height: 40px;
+  }
+  #contact .container .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 600px) and (max-width: 600px) {
+  #contact .container .row {
+    display: block;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #contact .container .row .contact-left p {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 999px) {
+  .openModalButton {
+    pointer-events: none;
+  }
+  .header-text {
+    margin-top: 5%;
+  }
+  #header {
+    background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash.jpg);
+  }
+  #header .header-text h1 {
+    font-size: 55px;
+    margin-top: 25%;
+  }
+  #header nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+  #header nav ul {
+    background: #262626;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  #header nav ul .fa-solid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+  #header nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  #contact .container .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 999px) and (max-width: 600px) {
+  #contact .container .row {
+    display: block;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 999px) {
+  #contact .container .row .contact-left p {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1299px) {
+  .openModalButton {
+    pointer-events: none;
+  }
+  .header-text {
+    margin-top: 5%;
+  }
+  #header {
+    background-image: url(img/pramod-tiwari-z16Cd-yQ-Xg-unsplash.jpg);
+  }
+  #header .header-text h1 {
+    font-size: 65px;
+    margin-top: 20%;
+  }
+  #contact .container .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1299px) and (max-width: 600px) {
+  #contact .container .row {
+    display: block;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1299px) {
+  #contact .container .row .contact-left p {
+    font-size: 20px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0F0C13;
+  color: #fff;
+}/*# sourceMappingURL=index.css.map */

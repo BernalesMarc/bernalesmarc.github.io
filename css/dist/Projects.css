@@ -1,0 +1,79 @@
+.tab {
+  overflow: hidden;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+  background: #262626;
+  margin: 2% 0 0 0;
+  padding: 25px;
+  border-radius: 12px;
+}
+.tabcontent .tabcontent-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tabcontent .tabcontent-list img {
+  height: 140px;
+  padding: 20px;
+  margin: 10px;
+}
+
+.topright {
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+.topright:hover {
+  color: #712C91;
+}
+
+#Projects .Projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  transition: 1s ease;
+}
+#Projects .Projects-list div {
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-right: 10px;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s, 1s ease;
+  overflow: hidden;
+}
+#Projects .Projects-list div i {
+  font-size: 50px;
+  margin: 30px;
+}
+#Projects .Projects-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 15px;
+}
+#Projects .Projects-list div:hover {
+  border: 5px solid #712C91;
+  transform: translateY(-35px);
+  transition: 0.5s ease;
+}
+#Projects .Projects-list div:hover button:hover {
+  color: white;
+}
+#Projects .Projects-list div button {
+  margin: 6% 0 0 0;
+  background-color: #262626;
+  float: left;
+  border: none;
+  color: #712C91;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  transition: 0.2s ease;
+  font-size: 17px;
+}

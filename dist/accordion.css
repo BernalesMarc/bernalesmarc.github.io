@@ -1,0 +1,46 @@
+.panel {
+  background-color: #262626;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-radius: 10px;
+}
+.panel .panel-list {
+  padding: 1%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+}
+.panel .panel-list .certificate {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.panel .panel-list .certificate img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+  height: 100%;
+}
+.panel .panel-list .certificate .layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #712C91);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+.panel .panel-list .certificate:hover .layer {
+  height: 100%;
+}
