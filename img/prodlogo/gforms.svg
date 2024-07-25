@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+
+<defs>
+</defs>
+<g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+	<path d="M 55.227 22.5 V 0 H 18.409 c -3.39 0 -6.136 2.746 -6.136 6.136 v 77.727 c 0 3.39 2.746 6.136 6.136 6.136 h 53.182 c 3.39 0 6.136 -2.746 6.136 -6.136 V 22.5 H 55.227 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(250,250,250); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<path d="M 29.659 64.943 c -1.693 0 -3.068 -1.376 -3.068 -3.068 s 1.376 -3.068 3.068 -3.068 s 3.068 1.376 3.068 3.068 S 31.352 64.943 29.659 64.943 z M 29.659 52.67 c -1.693 0 -3.068 -1.376 -3.068 -3.068 s 1.376 -3.068 3.068 -3.068 s 3.068 1.376 3.068 3.068 S 31.352 52.67 29.659 52.67 z M 29.659 40.398 c -1.693 0 -3.068 -1.376 -3.068 -3.068 c 0 -1.693 1.376 -3.068 3.068 -3.068 s 3.068 1.376 3.068 3.068 C 32.727 39.022 31.352 40.398 29.659 40.398 z M 63.409 64.432 H 37.841 v -5.114 h 25.568 V 64.432 z M 63.409 52.159 H 37.841 v -5.114 h 25.568 V 52.159 z M 63.409 39.886 H 37.841 v -5.114 h 25.568 V 39.886 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(96,83,97); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<polygon points="77.73,22.5 55.23,0 55.23,22.5 " style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(96,83,97); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+</g>
+</svg>
